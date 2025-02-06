@@ -50,9 +50,7 @@ if [ -d "$userHome/Library/Application Support/Google/Chrome/Default/Extensions"
         else result="NA" 
 fi 
  
-echo "&lt;result&gt;$result&lt;/result&gt;"</scriptContentsMac>
-<scriptContentsWindows/>
-</extensionAttribute>
+echo "<result>$result</result>"
 ```
 ## Fleet query:
 ```SELECT * FROM users CROSS JOIN chrome_extensions USING (uid);```
