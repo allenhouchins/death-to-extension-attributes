@@ -13,7 +13,7 @@ echo "<result>$(/usr/sbin/system_profiler SPiBridgeDataType | /usr/bin/awk -F ':
 exit 0
 ```
 ## Fleet query:
-```SELECT hardware_model, hardware_serial FROM system_info;```
+```SELECT json_extract(value, '$.model_name') AS security_chip FROM system_profiler WHERE data_type = 'SPiBridgeDataType';```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS
 
