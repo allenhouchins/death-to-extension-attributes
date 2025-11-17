@@ -26,6 +26,6 @@ fi
 echo "<result>${result}</result>"
 ```
 ## Fleet query:
-```SELECT enabled from location_services```
+```SELECT key, value, CASE WHEN value = '1' THEN 'Enabled' ELSE 'Disabled' END AS location_services_status FROM plist WHERE path LIKE '/var/db/locationd/Library/Preferences/ByHost/com.apple.locationd.%' AND key = 'LocationServicesEnabled';```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS

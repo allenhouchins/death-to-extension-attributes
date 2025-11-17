@@ -37,7 +37,7 @@ echo "<result>$(/bin/cat "${outputPath}")</result>"
 exit 0
 ```
 ## Fleet query:
-```SELECT interface, address, type FROM interface_addresses WHERE interface != 'lo0' ORDER BY interface;```
+```SELECT interface, nameservers FROM dns_resolvers WHERE interface != 'lo0' ORDER BY interface;```
 
 Compatible with: ✅ macOS ✅ Windows ✅ Linux 🚫 ChromeOS
 

@@ -14,7 +14,7 @@ echo "<result>$(/bin/hostname 2>&1)</result>"
 exit 0
 ```
 ## Fleet query:
-```SELECT hostname, computer_name FROM system_info;```
+```SELECT hostname FROM system_info;```
 
 Compatible with: ✅ macOS ✅ Windows ✅ Linux 🚫 ChromeOS
 

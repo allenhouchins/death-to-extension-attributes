@@ -13,7 +13,7 @@ echo "<result>$(/usr/sbin/diskutil info -plist "$(bless --getBoot)" | /usr/bin/p
 exit 0
 ```
 ## Fleet query:
-```SELECT device, path, label FROM mounts WHERE path = '/';```
+```SELECT device, path, device_alias FROM mounts WHERE path = '/';```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS
 

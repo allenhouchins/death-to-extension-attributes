@@ -25,6 +25,6 @@ fi
 echo "<result>${result}</result>"
 ```
 ## Fleet query:
-```SELECT * FROM sharing_preferences WHERE remote_login='1'```
+```SELECT name FROM processes WHERE name = 'sshd' AND path = '/usr/sbin/sshd';```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS

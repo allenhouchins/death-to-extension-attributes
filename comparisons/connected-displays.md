@@ -59,6 +59,6 @@ if __name__ == '__main__':
     main()
 ```
 ## Fleet query:
-```SELECT * FROM connected_displays```
+```SELECT json_extract(value, '$._items') AS displays FROM system_profiler WHERE data_type = 'SPDisplaysDataType';```
 
 Compatible with: ✅ macOS ✅ Windows ✅ Linux ✅ ChromeOS
