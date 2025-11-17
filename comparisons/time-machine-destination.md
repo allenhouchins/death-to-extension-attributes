@@ -30,6 +30,6 @@ else
 fi
 ```
 ## Fleet query:
-```SELECT alias FROM time_machine_destinations```
+```SELECT key, value FROM plist WHERE path = '/Library/Preferences/com.apple.TimeMachine.plist' AND key = 'DestinationVolumeUUID';```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS

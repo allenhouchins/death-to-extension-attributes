@@ -31,6 +31,6 @@ else
 fi
 ```
 ## Fleet query:
-```SELECT * FROM sharing_preferences WHERE file_sharing='1'```
+```SELECT name FROM processes WHERE name = 'AppleFileServer';```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS
